@@ -3,15 +3,15 @@ public class CheckLoadJDBC {
 
 	public static void main(String[] args) throws
 	InstantiationException, IllegalAccessException{
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODOè‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸãƒ¡ã‚½ãƒƒãƒ‰ãƒ»ã‚¹ã‚¿ãƒ–
 		String msg = "";
 
 		try{
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
-			msg = "ƒhƒ‰ƒCƒo‚Ìƒ[ƒh‚É¬Œ÷‚µ‚Ü‚µ‚½";
+			msg = "ãƒ‰ãƒ©ã‚¤ãƒã®ãƒ­ãƒ¼ãƒ‰ã«æˆåŠŸã—ã¾ã—ãŸ";
 		}
 		catch(ClassNotFoundException e){
-			msg = "ƒhƒ‰ƒCƒo‚Ìƒ[ƒh‚É¸”s‚µ‚Ü‚µ‚½";
+			msg = "ãƒ‰ãƒ©ã‚¤ãƒã®ãƒ­ãƒ¼ãƒ‰ã«å¤±æ•—ã—ã¾ã—ãŸ";
 		}
 		System.out.println(msg);
 
